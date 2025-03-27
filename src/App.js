@@ -173,7 +173,7 @@ import "./App.css";
 // 	function show2() {
 // 		alert(2);
 // 	}
-//	
+//
 // 	return <div>
 // 		<button onClick={show1}>act1</button>
 // 		<button onClick={show2}>act2</button>
@@ -184,21 +184,34 @@ import "./App.css";
 // 	function func(event) {
 // 		console.log(event);
 // 	}
-	
+
+// 	return <div>
+// 		<button onClick={func}>act</button>
+// 	</div>;
+// }
+//
+// function App() {
+// 	function func(event) {
+// 		console.log(event.target);
+// 	}
+
 // 	return <div>
 // 		<button onClick={func}>act</button>
 // 	</div>;
 // }
 //
 function App() {
-	function func(event) {
-		console.log(event.target);
-	}
-	
-	return <div>
-		<button onClick={func}>act</button>
-	</div>;
+  function func(arg1, arg2) {
+    console.log(arg1, arg2);
+  }
+
+  return (
+    <div>
+      <button onClick={() => func("eee", "second argument")}>act</button>
+    </div>
+  );
 }
+
 //
 //
 //
