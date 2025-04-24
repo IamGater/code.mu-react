@@ -200,18 +200,85 @@ import "./App.css";
 // 	</div>;
 // }
 //
-function App() {
-  function func(arg1, arg2) {
-    console.log(arg1, arg2);
-  }
+// function App() {
+//   function func(arg1, arg2) {
+//     console.log(arg1, arg2);
+//   }
 
-  return (
-    <div>
-      <button onClick={() => func("eee", "second argument")}>act</button>
-    </div>
-  );
-}
+//   return (
+//     <div>
+//       <button onClick={() => func("eee", "second argument")}>act</button>
+//     </div>
+//   );
+// }
+// function App() {
+//   const arr = [<li>1</li>, <li>2</li>, <li>3</li>, <li>4</li>, <li>5</li>];
+//   return <ul>{arr}</ul>;
+// }
+// function App() {
+//   const arr = [];
 
+//   for (let i = 0; i <= 5; i++) {
+//     arr.push(<li>{i}</li>);
+//   }
+
+//   return <ul>{arr}</ul>;
+// }
+// function App() {
+//   const arr = ["a", "b", "c", "d", "e"];
+
+//   const res = arr.map(function (item) {
+//     return <li>{item}</li>;
+//   });
+//   return <ul>{res}</ul>;
+// }
+// function App() {
+//   const arr = [1, 2, 3, 4, 5];
+
+//   const res = arr.map(function (item, i) {
+//     return <p key={i}>{item}</p>;
+//   });
+
+//   return <div>{res}</div>;
+// }
+//
+//
+// function App() {
+//   const users = [
+//     { name: "user1", surn: "surn1", age: 30 },
+//     { name: "user2", surn: "surn2", age: 31 },
+//     { name: "user3", surn: "surn3", age: 32 },
+//   ];
+
+//   const res = users.map(function (item, i) {
+//     return (
+//       <p key={i}>
+//         {item.name} {item.surn} {item.age}
+//       </p>
+//     );
+//   });
+
+//   return <div>{res}</div>;
+// }
+//
+//
+// function App() {
+//   const users = [
+//     { name: "user1", surn: "surn1", age: 30 },
+//     { name: "user2", surn: "surn2", age: 31 },
+//     { name: "user3", surn: "surn3", age: 32 },
+//   ];
+
+//   const res = users.map(function (item) {
+//     return (
+//       <p key={item.id}>
+//         {item.name} {item.surn} {item.age}
+//       </p>
+//     );
+//   });
+
+//   return <div>{res}</div>;
+// }
 //
 //
 //
