@@ -316,6 +316,199 @@ import "./App.css";
 // };
 //
 //
+// import { nanoid } from "nanoid";
+//
+// function App() {
+//   return nanoid();
+// }
+//
+//
+// import uuid from "react-uuid";
+//
+// function id() {
+//   return uuid();
+// }
+//
+//
+// import uuid from "react-uuid";
+//
+// function id() {
+//   return uuid();
+// }
+//
+// const users = [
+//   { id: id(), name: "user1", age: 30 },
+//   { id: id(), name: "user2", age: 31 },
+//   { id: id(), name: "user3", age: 32 },
+// ];
+//
+// console.log(users);
+//
+//
+// import React, { useState } from "react";
+
+// function App() {
+//   const [name, setName] = useState("user1");
+//   const [surn, setSurn] = useState("surn1");
+//   const [age, setAge] = useState(30);
+
+//   return (
+//     <div>
+//       <p>{name}</p>
+//       <p>{surn}</p>
+//       <p>{age}</p>
+//     </div>
+//   );
+// }
+//
+//
+// import React, { useState } from "react";
+
+// function App() {
+//   const [name, setName] = useState("user1");
+//   const [surn, setSurn] = useState("surn1");
+
+//   const changeName = () => {
+//     setName("newName");
+//   };
+
+//   const changeSurn = () => {
+//     setSurn("newSurn");
+//   };
+
+//   return (
+//     <div>
+//       <h2>Users</h2>
+//       <p>Name: {name}</p>
+//       <p>Surname: {surn}</p>
+//       <button onClick={changeName}>Change name</button>
+//       <button onClick={changeSurn}>Change surname</button>
+//     </div>
+//   );
+// }
+//
+//
+// import React, { useState } from "react";
+
+// function App() {
+//   const [isBanned, setIsBanned] = useState(false);
+
+//   const banUser = () => {
+//     setIsBanned(true);
+//   };
+
+//   const unbanUser = () => {
+//     setIsBanned(false);
+//   };
+
+//   return (
+//     <div>
+//       <p>{isBanned ? "user banned" : "user banned"}</p>
+//       <button onClick={banUser} disabled={isBanned}>
+//         ban
+//       </button>
+//       <button onClick={unbanUser} disabled={!isBanned}>
+//         unban
+//       </button>
+//     </div>
+//   );
+// }
+//
+//
+// import React, { useState } from "react";
+
+// function App() {
+//   const [isBanned, setIsBanned] = useState(false);
+
+//   const banUser = () => {
+//     setIsBanned(true);
+//   };
+
+//   const unbanUser = () => {
+//     setIsBanned(false);
+//   };
+
+//   return (
+//     <div>
+//       <p>{isBanned ? "user banned" : "user banned"}</p>
+
+//       {isBanned ? (
+//         <button onClick={unbanUser}>unban</button>
+//       ) : (
+//         <button onClick={banUser}>ban</button>
+//       )}
+//     </div>
+//   );
+// }
+//
+//
+// import React, { useState } from "react";
+
+// function App() {
+//   const [age, setAge] = useState(30);
+
+//   const increaseAge = () => {
+//     setAge((prev) => prev + 1);
+//   };
+
+//   const decreaseAge = () => {
+//     setAge((prev) => prev - 1);
+//   };
+
+//   return (
+//     <div>
+//       <p>age: {age}</p>
+//       <button onClick={increaseAge}>high</button>
+//       <button onClick={decreaseAge}>low</button>
+//     </div>
+//   );
+// }
+//
+//
+// import React, { useState } from "react";
+
+// function App() {
+//   const [text1, setText1] = useState("");
+//   const [text2, setText2] = useState("");
+
+//   return (
+//     <div>
+//       <input
+//         type="text"
+//         value={text1}
+//         onChange={(e) => setText1(e.target.value)}
+//       />
+//       <p>first: {text1}</p>
+
+//       <input
+//         type="text"
+//         value={text2}
+//         onChange={(e) => setText2(e.target.value)}
+//       />
+//       <p>second: {text2}</p>
+//     </div>
+//   );
+// }
+//
+//
+// import React, { useState } from "react";
+
+// function App() {
+//   const [text, setText] = useState("");
+
+//   return (
+//     <div>
+//       <input
+//         type="text"
+//         value={text}
+//         onChange={(e) => setText(e.target.value)}
+//       />
+//       <p>{text.length}</p>
+//     </div>
+//   );
+// }
+//
+//
 //
 //
 export default App;
