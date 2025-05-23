@@ -510,5 +510,40 @@ import "./App.css";
 //
 //
 //
+// import React, { useState } from "react";
+
+// function App() {
+//   const [age, setAge] = useState("");
+//   const year = new Date().getFullYear();
+
+//   return (
+//     <div>
+//       <input value={age} onChange={(e) => setAge(e.target.value)} />
+//       <p>{age && `Year: ${year - age}`}</p>
+//     </div>
+//   );
+// }
+//
+//
+//
+// import React, { useState } from "react";
+
+// function App() {
+//   const [f, setF] = useState("");
+
+//   return (
+//     <div>
+//       <input
+//         value={f}
+//         onChange={(e) => setF(e.target.value)}
+//         placeholder="Фаренгейт"
+//       />
+//       <p>{f && `Цельсий: ${(((f - 32) * 5) / 9).toFixed(2)}`}</p>
+//     </div>
+//   );
+// }
+//
+//
+//
 //
 export default App;
