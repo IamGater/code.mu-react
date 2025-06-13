@@ -545,5 +545,103 @@ import "./App.css";
 //
 //
 //
+// import React, { useState } from "react";
+
+// function App() {
+//   const [nums, setNums] = useState(Array(5).fill(""));
+
+//   const avg =
+//     nums
+//       .map(Number)
+//       .filter((n) => !isNaN(n))
+//       .reduce((a, b) => a + b, 0) / nums.filter((n) => n !== "").length || "";
+
+//   return (
+//     <div>
+//       {nums.map((n, i) => (
+//         <input
+//           key={i}
+//           value={n}
+//           onChange={(e) => {
+//             const copy = [...nums];
+//             copy[i] = e.target.value;
+//             setNums(copy);
+//           }}
+//         />
+//       ))}
+//       <p>{avg && `Среднее: ${avg.toFixed(2)}`}</p>
+//     </div>
+//   );
+// }
+//
+//
+//
+//import React, { useState } from 'react';
+
+// function App() {
+//   const [a, setA] = useState("");
+//   const [b, setB] = useState("");
+//   const [result, setResult] = useState("");
+
+//   const sum = () => {
+//     setResult(Number(a) + Number(b));
+//   };
+
+//   const multiply = () => {
+//     setResult(Number(a) * Number(b));
+//   };
+
+//   return (
+//     <div>
+//       <input value={a} onChange={(e) => setA(e.target.value)} />
+//       <input value={b} onChange={(e) => setB(e.target.value)} />
+//       <button onClick={sum}>Sum</button>
+//       <button onClick={multiply}>Multiply</button>
+//       <p>Result: {result}</p>
+//     </div>
+//   );
+// }
+//
+//
+//
+// import React, { useState } from "react";
+
+// function App() {
+//   const [date1, setDate1] = useState("");
+//   const [date2, setDate2] = useState("");
+//   const [diff, setDiff] = useState("");
+
+//   const calculateDiff = () => {
+//     const d1 = new Date(date1);
+//     const d2 = new Date(date2);
+//     const timeDiff = Math.abs(d2 - d1);
+//     const dayDiff = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+//     setDiff(dayDiff);
+//   };
+
+//   return (
+//     <div>
+//       <input
+//         type="date"
+//         value={date1}
+//         onChange={(e) => setDate1(e.target.value)}
+//       />
+//       <input
+//         type="date"
+//         value={date2}
+//         onChange={(e) => setDate2(e.target.value)}
+//       />
+//       <button onClick={calculateDiff}>Calculate</button>
+//       <p>Result: {diff && `${diff}`}</p>
+//     </div>
+//   );
+// }
+//
+//
+//
+//  
+//
+//
+//
 //
 export default App;
