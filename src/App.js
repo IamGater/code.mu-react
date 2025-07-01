@@ -44,6 +44,11 @@ import "./tasks/42";
 import "./tasks/43";
 import "./tasks/44";
 import "./tasks/45";
+import "./tasks/46";
+import "./tasks/47";
+import "./tasks/48";
+import "./tasks/49";
+import "./tasks/50";
 
 function App() {
   return <div className="App"></div>;
